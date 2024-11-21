@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore")
 load_dotenv()
 
 # Initialize API keys and models
-openai_api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 embeddings = OpenAIEmbeddings()
 llm = ChatOpenAI()
 
